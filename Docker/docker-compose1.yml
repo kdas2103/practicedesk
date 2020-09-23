@@ -1,0 +1,12 @@
+#a compose file to create a DB and WORDPRESS container and link between the both
+version: '3.0'
+db:
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+    image: postgres
+  wordpress:
+    image: wordpress
+    links:
+    - db
+    ports:
+    - 8085:80
