@@ -1,4 +1,4 @@
-# For creating containers with SSH enabled containers
+# For creating containers with SSH enabled containers-practise bed fro ansible
 # For Key related issue run " ssh-keygen -R [hostname] "
 FROM ubuntu
 RUN apt-get update && apt-get install -y openssh-server
